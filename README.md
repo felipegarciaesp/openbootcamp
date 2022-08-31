@@ -9,7 +9,7 @@ Notas de los cursos de OpenBootCamp
 
 - Inmutabilidad significa que no lo puedo cambiar, no se modifica la zona de memoria en la que creo la variable. Hay 3 tipos de datos inmutables en Python: **numeros**, **texto** y **tuplas**.
 
-- Mutabilidad significa que lo puedo cambiar, puedo hacer operaciones en ellos. Ejemplos: **listas**, **diccionarios**
+- Mutabilidad significa que lo puedo cambiar, puedo hacer operaciones en ellos. Ejemplos: **listas**, **diccionarios**, **conjuntos**
 
 
 - Diferencias entre listas y tuplas:
@@ -29,3 +29,19 @@ diccionario = {
 - Para eliminar valores de un diccionario se puede utilizar **pop** y **del**. Con el primero se imprime en pantalla el valor que se está eliminando, mientras que el segundo no muestra lo eliminado. El **pop** puede ser útil si, por ejemplo, quiero guardar en otra variable el valor que he eliminado del diccionario.
 
 - `diccionario.pop('clave1')` elimina la clave1 (junto con su valor)
+
+- **Conjuntos o sets**: son listas pero son una sutil diferencia, los conjuntos no muestran valores duplicados mientras que una lista puede repetir elementos. Los elementos de un conjunto se agrupan en este tipo de corchetes: "{ }".
+
+```
+lista = [1,2,3,1,2,3]
+conjunto = {1,2,3,1,2,3}
+
+(el print del conjunto será: {1,2,3})
+```
+
+- Operaciones interesantes con conjuntos, sea `a = {0,2,4,6,8}` y `b = {1,2,3,4,5}`:
+
+    - `a | b` significa "a union b", va a arrojar el conjunto union: `{0,1,2,3,4,5,6,8}`.
+    - `a & b` significa "intersección", va a arrojar el conjunto intersección: `{2,4}`.
+    - `a - b` significa "diferencia", va a arrojar: `{0,8,6}`. Básicamente, esta operación va a arrojar el conjunto `a` sin los elementos que están en el conjunto `b`.
+    - `a ^ b` significa "diferencia simétrica", arroja: `{0,1,3,5,6,8}`. Básicamente arroja los elementos que **no** tienen en comun ambos conjuntos.
