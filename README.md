@@ -45,3 +45,7 @@ conjunto = {1,2,3,1,2,3}
     - `a & b` significa "intersección", va a arrojar el conjunto intersección: `{2,4}`.
     - `a - b` significa "diferencia", va a arrojar: `{0,8,6}`. Básicamente, esta operación va a arrojar el conjunto `a` sin los elementos que están en el conjunto `b`.
     - `a ^ b` significa "diferencia simétrica", arroja: `{0,1,3,5,6,8}`. Básicamente arroja los elementos que **no** tienen en comun ambos conjuntos.
+
+## 4. Estructuras de Control
+
+- **Control de Flujo :** El **control de flujo** de un programa lo que hace es guiar la ejecución del mismo.
