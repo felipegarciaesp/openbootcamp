@@ -49,3 +49,5 @@ conjunto = {1,2,3,1,2,3}
 ## 4. Estructuras de Control
 
 - **Control de Flujo :** El **control de flujo** de un programa lo que hace es guiar la ejecución del mismo.
+
+- **Sentencias Condicionales :** En Python existen dos: **if** y **while**.
