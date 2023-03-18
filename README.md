@@ -58,7 +58,7 @@ conjunto = {1,2,3,1,2,3}
 
 - Lo que ocurre dentro de un bucle es la iteración. 
 
-- **break**: finaliza la ejecución del bucle inmediatamente anterior. En el siguiente ejemplo, el bucle anterior sería el **while** y el **if** sería la condición.
+- **break**: finaliza la ejecución del bucle inmediatamente anterior. En el siguiente ejemplo, el bucle anterior sería el **while** y el **if** sería la condición. Rompe el bucle padre.
 
 ```
 while contador <= 10:
@@ -69,3 +69,20 @@ while contador <= 10:
 
     contador += 1
 ```
+
+- **continue**: fuerza la siguiente iteración. Esto signifca que todo lo que hay por debajo del **continue** no se ejecutará y volverá al principio. En el siguiente ejemplo, el **continue** va a provocar que haya un loop infinito atrapado en imprimir "2 es un numero par".
+```
+contador = 1
+
+while contador <= 10:
+    if contador % 2 == 0:
+        print(contador, "es un numero par")
+        continue
+        
+    print("Y ahora incremento el contador")
+    contador += 1
+    
+print("Fuera del while")
+```
+
+- Ocupar bien el **continue** es una muestra de buena programación. Bien usado es una buena práctica. Lo mismo que **break**, no debemos romper los bucles sin darnos cuenta.
