@@ -51,3 +51,5 @@ conjunto = {1,2,3,1,2,3}
 - **Control de Flujo :** El **control de flujo** de un programa lo que hace es guiar la ejecución del mismo.
 
 - **Sentencias Condicionales :** En Python existen dos: **if** y **while**.
+
+- **Puerta XOR :** También llamado **OR exclusiva** es una puerta lógica digital que implementa el **O exclusivo**, es decir, una salida verdadera resulta si una, y solo una de las entradas a la puerta es verdadera.
