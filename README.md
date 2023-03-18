@@ -61,5 +61,11 @@ conjunto = {1,2,3,1,2,3}
 - **break**: finaliza la ejecución del bucle inmediatamente anterior. En el siguiente ejemplo, el bucle anterior sería el **while** y el **if** sería la condición.
 
 ```
-**while** contador
+while contador <= 10:
+    print("contador vale", contador)
+
+    if contador == 5:
+        break
+
+    contador += 1
 ```
