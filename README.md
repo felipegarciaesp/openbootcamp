@@ -53,3 +53,13 @@ conjunto = {1,2,3,1,2,3}
 - **Sentencias Condicionales :** En Python existen dos: **if** y **while**.
 
 - **Puerta XOR :** También llamado **OR exclusiva** es una puerta lógica digital que implementa el **O exclusivo**, es decir, una salida verdadera resulta si una, y solo una de las entradas a la puerta es verdadera.
+
+- ¿Es posible abortar un bucle?: Sí -> **break** y **continue**. Con estos podemos romper la ejecución de un bucle.
+
+- Lo que ocurre dentro de un bucle es la iteración. 
+
+- **break**: finaliza la ejecución del bucle inmediatamente anterior. En el siguiente ejemplo, el bucle anterior sería el **while** y el **if** sería la condición.
+
+```
+**while** contador
+```
