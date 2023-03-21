@@ -86,3 +86,82 @@ print("Fuera del while")
 ```
 
 - Ocupar bien el **continue** es una muestra de buena programación. Bien usado es una buena práctica. Lo mismo que **break**, no debemos romper los bucles sin darnos cuenta.
+
+- **for**: es, quizás, la estructura de control más conocida.
+
+- El siguiente es un muy buen ejemplo para utilizar el **for** con **break**:
+
+```
+lista = ["hola", "mensaje", "adios"]
+
+for palabra in lista:
+    print("Palabra actual:", palabra)
+
+    if palabra == "mensaje":
+        print("He encontrado la palabra mensaje")
+        break
+```
+
+- **switch**: es una conveniencia para comparar una variable con determinados valores y actuar en consecuancia. Hasta Python 3.9 no se podían hacer **switch** en Python. Lo siguiente es la forma de hacer **switch** hasta antes de la versión 3.9 de Python (incluida):
+
+```
+valor = 5
+
+if valor == 1:
+    print("Valor es 1")
+elif valor == 2:
+    print("Valor es 2")
+elif valor == 3:
+    print("Valor es 3")
+elif valor == 4:
+    print("Valor es 4")
+elif valor == 5:
+    print("Valor es 5")
+
+```
+
+- **match**: es la palabra reservada que hay en Python para hacer el switch mostrado.
+
+```
+valor = 3
+
+match valor:
+    case 1:
+        print("Valor es 1")
+    case 2:
+        print("Valor es 2")
+    case 3:
+        print("Valor es 3")
+    case 4:
+        print("Valor es 4")
+    case 5:
+        print("Valor es 5")
+
+```
+
+- El ciclo **for** tiene un **else**. Mucha gente que lleva años programando en Python no lo utiliza, pero hay programadores avanzados que si lo utilizan. El **else** del **for** se ejecuta siempre y cuando el **for** no se haya roto. Un **for** se rompe con **break**. Muy pocos programadores de Python conocen esto. Ejemplo:
+
+```
+lista = ["hola", "mensaje", "adios"]
+
+for palabra in lista:
+    if palabra == "mensaje"":
+        print("Encuentro la palabra mensaje")
+        break
+else:
+    print("No encuentro nada")
+
+
+```
+
+- Las variables tienen algo llamado **"ámbito"**. Existe el **ámbito global** y el **ámbito de bucle**. El ámbito de una variable depende de donde las ponga. Las variables que se encuentren dentro de un bucle solo las puedo utilizar dentro de ese bucle.
+
+- **pass**: en el momento que se encuentra, pasa (hace nada). Util para ponerlo cuando quiero dejar un bucle, pero aún no tengo claro que poner ahí. Esto evita que se arroje un error. Se utiliza cuando no tenemos claro la implementación de un bucle, método, etc.
+
+```
+lista = ["hola", "mensaje", "adios"]
+
+for palabra in lista:
+    pass
+
+```
